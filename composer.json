@@ -15,15 +15,19 @@
     {
       "name": "Holger Lösken",
       "email": "holger.loesken@codedge.de"
+    },
+    {
+      "name": "Rick Doorakkers",
+      "email": "github@rido.me"
     }
   ],
   "extra": {
     "laravel": {
       "providers": [
-        "Codedge\\Fpdf\\FpdfServiceProvider"
+        "GoedGepickt\\Fpdf\\FpdfServiceProvider"
       ],
       "aliases": {
-        "Fpdf": "Codedge\\Fpdf\\Facades\\Fpdf"
+        "Fpdf": "GoedGepickt\\Fpdf\\Facades\\Fpdf"
       }
     }
   },
@@ -33,7 +37,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Codedge\\Fpdf\\": "src/"
+      "GoedGepickt\\Fpdf\\": "src/"
     }
   }
 }
