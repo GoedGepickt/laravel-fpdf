@@ -1,4 +1,4 @@
-# Laravel 5 package for Fpdf
+# Laravel 6 package for Fpdf
 
 [![Latest Stable Version](https://poser.pugx.org/codedge/laravel-fpdf/v/stable?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
 [![Total Downloads](https://poser.pugx.org/codedge/laravel-fpdf/downloads?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
@@ -6,7 +6,7 @@
 [![License](https://poser.pugx.org/codedge/laravel-fpdf/license?format=flat-square)](https://packagist.org/packages/codedge/laravel-fpdf)
 
 This repository implements a simple [ServiceProvider](https://laravel.com/docs/master/providers)
-that creates a singleton instance of the Fpdf PDF library - easily accessible via a [Facade](https://laravel.com/docs/master/facades) in [Laravel 5](http://laravel.com).  
+that creates a singleton instance of the Fpdf PDF library - easily accessible via a [Facade](https://laravel.com/docs/master/facades) in [Laravel 6](http://laravel.com).  
 
 See [FPDF homepage](http://www.fpdf.org/) for more information about the usage.
 
@@ -17,39 +17,8 @@ $ composer require codedge/laravel-fpdf
 
 ## Usage
 
-### Laravel >= 5.5
+### Laravel >= 6.0
 Enjoy the auto discovery feature. 
-
-### Laravel <5.5
-To use the static interfaces (facades) you need to add the following lines to your `config/app.php`. The `[1]` is for
-registering the service provider, the `[2]` are for specifying the facades:
-
-```php
-// config/app.php
-
-return [
-
-    //...
-    
-    'providers' => [
-        // ...
-        
-        /*
-         * Application Service Providers...
-         */
-        // ...
-        Codedge\Fpdf\FpdfServiceProvider::class, // [1]
-    ],
-    
-    // ...
-    
-    'aliases' => [
-        // ...
-        'Fpdf' => Codedge\Fpdf\Facades\Fpdf::class, // [2]
-]
-```
-
-Now you can use the facades in your application. 
 
 ## Configuration (optional)
 Run   
